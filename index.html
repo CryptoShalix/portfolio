@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Alexis de la Rosa · Portfolio</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/index.css"
+    />
+    <link
+      rel="icon"
+      href="images/favicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      type="module"
+      src="js/index.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <a href="#">CryptoShalix</a>
+      </div>
+
+      <input
+        type="checkbox"
+        id="nav-toggle-checkbox"
+        class="nav-toggle-checkbox"
+        aria-hidden="true"
+      >
+      <label
+        for="nav-toggle-checkbox"
+        class="nav-toggle"
+        aria-label="Abrir menú"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-links">
+        <a href="#about">Perfil</a>
+        <a href="#stack">Stack</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#extra">Más</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- ─── HERO ─────────────────────────────────────────────────────────────── -->
+    <section id="hero">
+      <div class="section-inner">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+          <div class="hero-tag">Se presenta</div>
+          <h1 class="hero-name">
+            CryptoShalix<br /><em>Alexis de la Rosa García</em>
+          </h1>
+          <p class="hero-sub">Desarrollador · Mentor · Trader · Compositor · Poeta</p>
+          <div class="hero-desc">
+            <ul class="hero-list">
+              <li>Organizador de vida y mentor del <a
+                  href="https://bitakashico.com/mentoria"
+                  target="_blank"
+                >SER Conectado</a> en BitAkashico.</li>
+              <li>Desarrollador fullstack web y especialista en soporte técnico práctico.</li>
+              <li>Trader con criterio propio, basado en riesgo controlado y disciplina.</li>
+              <li>Compositor y poeta que usa la creatividad para transmitir con impacto.</li>
+            </ul>
+          </div>
+          <div class="hero-actions">
+            <a
+              href="#experience"
+              class="btn-primary"
+            >Ver experiencia</a>
+            <a
+              href="#contact"
+              class="btn-ghost"
+            >Contactar</a>
+          </div>
+        </div>
+        <div class="hero-scroll">
+          <div class="scroll-line"></div>
+          scroll
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ────────────────────────────────────────────────────────────── -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-label">01 — Perfil</div>
+        <h2 class="section-title reveal">Desarrollador con <em>criterio</em><br />y experiencia real</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Construyo aplicaciones web con código limpio y atención al detalle.
+              Más de 30 clientes, múltiples sectores y la misma pasión por resolver
+              problemas complejos desde el primer día.
+            </p>
+            <p>
+              CryptoShalix no es una marca personal. Es una identidad construida desde la experiencia real
+              y la exploración práctica en mentalidad, salud, economía, relaciones, tecnología y consciencia.
+            </p>
+            <p>
+              Acompaño a personas que quieren cambiar pero viven desorden, bloqueo o desgaste interno.
+              Mi método KISS parte de entender cómo funciona cada persona y diseñar sistemas simples y
+              sostenibles para su vida real.
+            </p>
+            <p>
+              Integro mentoría, trading, tecnología y creatividad: cada disciplina aporta estructura,
+              intuición y conexión emocional. Construyo soluciones que funcionan en el mundo real,
+              no solo en presentaciones bonitas.
+            </p>
+          </div>
+          <div class="about-stats reveal reveal-delay-2">
+            <div class="stat-card">
+              <div class="stat-num">+12</div>
+              <div class="stat-label">Años de experiencia como desarrollador</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">+30</div>
+              <div class="stat-label">Clientes atendidos</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">75%</div>
+              <div class="stat-label">Reducción de errores en proyectos clave</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">3→1</div>
+              <div class="stat-label">Min. de carga reducidos a &lt;60s</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── STACK ─────────────────────────────────────────────────────────────── -->
+    <section id="stack">
+      <div class="section-inner">
+        <div class="section-label">02 — Stack</div>
+        <h2 class="section-title reveal">Herramientas que <em>domino</em></h2>
+        <div class="stack-grid">
+          <div class="stack-category reveal">
+            <div class="stack-cat-title">Frontend</div>
+            <div class="stack-items">
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">Angular</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Vue</span>
+              <span class="stack-tag">Next.js</span>
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">CSS3</span>
+              <span class="stack-tag">jQuery</span>
+            </div>
+          </div>
+          <div class="stack-category reveal reveal-delay-1">
+            <div class="stack-cat-title">Backend</div>
+            <div class="stack-items">
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express</span>
+              <span class="stack-tag">.NET C#</span>
+              <span class="stack-tag">.NET VB</span>
+              <span class="stack-tag">API REST</span>
+              <span class="stack-tag">JWT</span>
+              <span class="stack-tag">Swagger</span>
+              <span class="stack-tag">Java</span>
+            </div>
+          </div>
+          <div class="stack-category reveal reveal-delay-2">
+            <div class="stack-cat-title">Datos &amp; DevOps</div>
+            <div class="stack-items">
+              <span class="stack-tag">SQL Server</span>
+              <span class="stack-tag">Oracle / PL-SQL</span>
+              <span class="stack-tag">Git</span>
+              <span class="stack-tag">Azure DevOps</span>
+              <span class="stack-tag">Jira</span>
+              <span class="stack-tag">Postman</span>
+              <span class="stack-tag">Scrum</span>
+              <span class="stack-tag">Telerik Reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ────────────────────────────────────────────────────────── -->
+    <section id="experience">
+      <div class="section-inner">
+        <div class="section-label">03 — Experiencia</div>
+        <h2 class="section-title reveal">Trayectoria <em>profesional</em></h2>
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-period">Jul 2025 — Dic 2025</div>
+            <div class="timeline-title">Formador Tecnológico</div>
+            <div class="timeline-company">CiberVoluntarios · Programa UE / Gobierno de España</div>
+            <div class="timeline-desc">
+              Formador voluntario en centros públicos de la comarca. Impartí sesiones de ciberseguridad
+              y alfabetización digital para niños de 8–12 años (Campamento Digital) y para mayores de 60
+              (Pueblo Digital y YoConecto). Todos los grupos pidieron repetir las sesiones.
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Formación</span>
+              <span class="timeline-tag">Ciberseguridad</span>
+              <span class="timeline-tag">Divulgación</span>
+              <span class="timeline-tag">Inclusión digital</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-period">Ene 2025 — PRESENTE</div>
+            <div class="timeline-title">Freelance: Mentor · Fundador</div>
+            <div class="timeline-company">BitAkashico · bitakashico.com</div>
+            <div class="timeline-desc">
+              Proyecto multidisciplinar propio. Desarrollo web para clientes (BitSites), soporte técnico
+              para particulares (BitTech), masterclasses sobre Tecnología y Economía (Sessions), y mentoría
+              personalizada mensual. Stack: Node.js + JavaScript Vanilla + CSS3 — diseñado e implementado íntegramente.
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Node.js</span>
+              <span class="timeline-tag">JavaScript</span>
+              <span class="timeline-tag">Pasarela de pagos</span>
+              <span class="timeline-tag">Mentoría</span>
+              <span class="timeline-tag">Soporte técnico</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-period">Jul 2017 — Jun 2024 · 7 años</div>
+            <div class="timeline-title">Fullstack Developer</div>
+            <div class="timeline-company">Avantgarde IT Services · +30 clientes</div>
+            <div class="timeline-desc">
+              Consultoría para clientes como Repsol, Metro Madrid, Hispasat, Acción Contra el Hambre,
+              Indra (Sacyr), Urbaser, FPRL, Telemadrid y muchos más. Desarrollo y mantenimiento evolutivo
+              en entornos enterprise: Angular, React, Vue, .NET, Node.js, SQL Server y Oracle.
+              Liderazgo de developers junior, comunicación directa con cliente y gestión de sprints completos.
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Angular</span>
+              <span class="timeline-tag">React</span>
+              <span class="timeline-tag">Vue</span>
+              <span class="timeline-tag">Next.js</span>
+              <span class="timeline-tag">.NET C#</span>
+              <span class="timeline-tag">Node.js</span>
+              <span class="timeline-tag">SQL Server</span>
+              <span class="timeline-tag">Oracle</span>
+              <span class="timeline-tag">Scrum</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-period">Jul 2016 — May 2017</div>
+            <div class="timeline-title">Android Developer</div>
+            <div class="timeline-company">Miotek Factory</div>
+            <div class="timeline-desc">
+              Desarrollo completo de app Android para plataforma de apuestas deportivas.
+              Mejora del rendimiento en un 15% y reducción de complejidad de código en un 90%.
+              Colaboración con equipos de backend (PHP) e iOS (Swift).
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Java</span>
+              <span class="timeline-tag">Android Studio</span>
+              <span class="timeline-tag">.NET C#</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-period">Jun 2012 — Abr 2014</div>
+            <div class="timeline-title">Software Developer / Analyst</div>
+            <div class="timeline-company">Alten Spain</div>
+            <div class="timeline-desc">
+              Desarrollo y mantenimiento de aplicaciones .NET (C# y VB).
+              Optimización de consultas SQL, consumo de APIs y apoyo en testing y análisis técnico.
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">.NET C#</span>
+              <span class="timeline-tag">VB</span>
+              <span class="timeline-tag">SQL</span>
+              <span class="timeline-tag">API REST</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS ──────────────────────────────────────────────────────────── -->
+    <section id="projects">
+      <div class="section-inner">
+        <div class="section-label">04 — Proyectos</div>
+        <h2 class="section-title reveal">Lo que <em>construyo</em><br />por cuenta propia</h2>
+        <div class="projects-grid">
+
+          <div class="project-card reveal featured">
+            <div class="project-number">01 / Plataforma propia</div>
+            <div class="project-title">BitAkashico</div>
+            <div class="project-desc">
+              Plataforma web fullstack construida desde cero: backend en Node.js, frontend en JavaScript
+              Vanilla + CSS3. Incluye sistema de academia, mentoría, servicios técnicos y pasarela de pagos.
+              Diseño, textos e imágenes, también míos.
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Vanilla JS</span>
+                <span class="stack-tag">CSS3</span>
+              </div>
+              <a
+                href="https://bitakashico.com"
+                target="_blank"
+                class="project-link"
+              >Ver web</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-1 featured">
+            <div class="project-number">02 / Cliente</div>
+            <div class="project-title">Jazmyn Alma de Leona</div>
+            <div class="project-desc">
+              Landing page single-page con diseño personalizado para lanzamiento de servicios online.
+              Enfocada en conversión, presentación de marca personal y experiencia visual diferenciada.
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS3</span>
+                <span class="stack-tag">JavaScript</span>
+              </div>
+              <a
+                href="https://jazmynalmadeleona.com"
+                target="_blank"
+                class="project-link"
+              >Ver web</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-number">03 / Cliente</div>
+            <div class="project-title">Portfolio — Jose Batutas</div>
+            <div class="project-desc">
+              Portfolio minimalista diseñado para ser autogestionable por el cliente sin conocimientos técnicos,
+              de coste cero y con hosting estático permanente. Enfoque post-mortem: sobrevive sin mantenimiento.
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">Static</span>
+              </div>
+              <a
+                href="https://josebatutas.github.io/portfolio"
+                target="_blank"
+                class="project-link"
+              >Ver web</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-3">
+            <div class="project-number">04 / Open source</div>
+            <div class="project-title">GitHub — CryptoShalix</div>
+            <div class="project-desc">
+              Repositorio con proyectos personales de exploración y aprendizaje: juegos, herramientas,
+              experimentos con nuevas tecnologías. El código es la mejor carta de presentación.
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="stack-tag">Varios</span>
+              </div>
+              <a
+                href="https://github.com/CryptoShalix"
+                target="_blank"
+                class="project-link"
+              >Ver GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXTRA ─────────────────────────────────────────────────────────────── -->
+    <section id="extra">
+      <div class="section-inner">
+        <div class="section-label">05 — Formación &amp; Más</div>
+        <h2 class="section-title reveal">Más allá del <em>código</em></h2>
+        <div class="extra-grid">
+
+          <div class="extra-block reveal">
+            <h3>Formación académica</h3>
+            <div class="extra-item">
+              <div class="extra-item-period">2014 — 2016</div>
+              <div class="extra-item-title">T.S. Desarrollo de Aplicaciones Multiplataforma</div>
+              <div class="extra-item-sub">I.E.S. Azarquiel, Toledo</div>
+            </div>
+            <div class="extra-item">
+              <div class="extra-item-period">2009 — 2011</div>
+              <div class="extra-item-title">T.S. Sistemas de Telecomunicación e Informáticos</div>
+              <div class="extra-item-sub">I.E.S. Azarquiel, Toledo</div>
+            </div>
+            <div class="extra-item">
+              <div class="extra-item-period">Cambridge</div>
+              <div class="extra-item-title">First Certificate in English · B2/C1</div>
+              <div class="extra-item-sub">Inglés fluido — Español y Catalán nativos</div>
+            </div>
+          </div>
+
+          <div class="extra-block reveal reveal-delay-2">
+            <h3>Voluntariado &amp; Habilidades</h3>
+            <div class="extra-item">
+              <div class="extra-item-period">Jul — Dic 2025</div>
+              <div class="extra-item-title">CiberVoluntarios · Formador</div>
+              <div class="extra-item-sub">
+                Campamento Digital (8–12 años), Pueblo Digital y YoConecto (60+ años).
+                Financiado por la UE y el Gobierno de España.
+              </div>
+            </div>
+            <div class="extra-item">
+              <div class="extra-item-period">Transversal</div>
+              <div class="extra-item-title">Liderazgo técnico &amp; Mentoring</div>
+              <div class="extra-item-sub">
+                Formación de junior developers, supervisión de becarios y comunicación
+                directa con cliente en entornos Scrum.
+              </div>
+            </div>
+            <div class="extra-item">
+              <div class="extra-item-period">Desde siempre</div>
+              <div class="extra-item-title">Soporte técnico</div>
+              <div class="extra-item-sub">
+                Windows, Linux, Android, redes, optimización de rendimiento,
+                configuración de dispositivos. Explicando siempre al detalle.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ───────────────────────────────────────────────────────────── -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="section-label">06 — Contacto</div>
+        <h2 class="section-title reveal">¿Hablamos<br />de tu <em>proyecto</em>?</h2>
+        <p class="contact-sub reveal">
+          Usa este formulario para consultar servicios, colaboraciones o cualquier idea de proyecto.
+          Si prefieres, también puedes conectar por LinkedIn o GitHub.
+        </p>
+
+        <div class="contact-card reveal">
+          <form
+            id="contact-form"
+            class="contact-form-grid"
+            novalidate
+          >
+            <label class="form-field">
+              <span class="field-label">* Nombre / Apodo</span>
+              <input
+                type="text"
+                id="nickname"
+                name="nickname"
+                class="form-control"
+                placeholder="Bob / Bob2140"
+                required
+              />
+              <span
+                class="field-error hidden"
+                id="error-nickname"
+              ></span>
+            </label>
+
+            <label class="form-field">
+              <span class="field-label">* Email</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="email@dominio.com"
+                required
+              />
+              <span
+                class="field-error hidden"
+                id="error-email"
+              ></span>
+            </label>
+
+            <label class="form-field">
+              <span class="field-label">Teléfono / Telegram</span>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="+34 111 222 333 / @telegram_id"
+              />
+            </label>
+
+            <label class="form-field">
+              <span class="field-label">* Mensaje</span>
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                rows="5"
+                placeholder="Solicitudes, consultas o ideas... Cuéntame lo que tienes en mente."
+                minlength="10"
+                required
+              ></textarea>
+              <span
+                class="field-error hidden"
+                id="error-message"
+              ></span>
+            </label>
+
+            <p class="form-note">
+              Los datos de contacto indicados NO serán compartidos ni almacenados.
+            </p>
+
+            <button
+              type="submit"
+              class="btn-primary"
+            >Enviar</button>
+          </form>
+
+          <div
+            id="form-notice"
+            class="form-notice hidden"
+            aria-live="polite"
+          ></div>
+        </div>
+
+        <div class="contact-links reveal">
+          <a
+            href="https://linkedin.com/in/adlrg"
+            target="_blank"
+            class="contact-link"
+          >
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/CryptoShalix"
+            target="_blank"
+            class="contact-link"
+          >
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ────────────────────────────────────────────────────────────── -->
+    <footer>
+      <div class="footer-copy">© 2026 · Todos los derechos reservados</div>
+      <div class="footer-sig">Un desarrollo de @CryptoShalix</div>
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,124 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 4rem;
+  background: linear-gradient(to bottom, rgba(8, 11, 18, 0.95), transparent);
+  backdrop-filter: blur(0px);
+  transition: background 0.4s, backdrop-filter 0.4s;
+
+  &.scrolled {
+    background: rgba(8, 11, 18, 0.92);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Mobile Menu Toggle (Hamburger) */
+  .nav-toggle-checkbox {
+    display: none;
+  }
+
+  .nav-toggle {
+    position: relative;
+    display: none;
+    width: 2rem;
+    height: 1.5rem;
+    padding: 0;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      transform: translateY(-.1rem);
+    }
+
+    span {
+      --bar-size: .21rem;
+
+      position: absolute;
+      left: .15rem;
+      right: .15rem;
+      width: 100%;
+      height: var(--bar-size);
+      background: var(--white);
+      opacity: .75;
+      border-radius: 1rem;
+      transition: all .5s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: calc(50% - var(--bar-size) / 2);
+      }
+
+      &:nth-child(3) {
+        bottom: 0;
+      }
+    }
+  }
+
+  /* Hamburger Animation - CSS Only */
+  .nav-toggle-checkbox:checked~.nav-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .nav-toggle-checkbox:checked~.nav-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle-checkbox:checked~.nav-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+
+  /* Mobile Menu - CSS Controlled */
+  .nav-toggle-checkbox:checked~.nav-links {
+    display: flex;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0 .25rem;
+      border-bottom: .15rem solid transparent;
+      transition: color 0.25s;
+
+      &:hover {
+        color: var(--white);
+        border-color: var(--white);
+        text-shadow: 0 0 1rem var(--white);
+      }
+    }
+  }
+}

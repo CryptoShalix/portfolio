@@ -1,0 +1,88 @@
+/* RESET & BASE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #080B12;
+  --bg2: #0D1220;
+  --bg3: #121828;
+  --surface: #161D2E;
+  --border: rgba(255, 255, 255, 0.06);
+  --gold: #C8A45A;
+  --gold-transparent: rgba(200, 164, 90, 0.25);
+  --gold-dim: rgba(200, 164, 90, 0.15);
+  --gold-glow: rgba(200, 164, 90, 0.06);
+  --white: #F0EDE6;
+  --muted: #7A8399;
+  --accent: #4A90D9;
+  --tag-bg: rgba(74, 144, 217, 0.1);
+  --r: 4px;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Outfit', sans-serif;
+  --transition-default: all 0.3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.65;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: .15rem solid transparent;
+  transition: var(--transition-default);
+
+  &:hover {
+    border-color: var(--gold);
+  }
+}
+
+/* NOISE OVERLAY */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.022;
+  pointer-events: none;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 164, 90, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 164, 90, 0.5);
+}

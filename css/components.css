@@ -1,0 +1,62 @@
+.btn-primary {
+  padding: 0.85rem 1rem;
+  background: var(--gold);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: var(--r);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(200, 164, 90, 0.3);
+  }
+}
+
+.btn-ghost {
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(200, 164, 90, 0.35);
+  color: var(--gold);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  border-radius: var(--r);
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: var(--gold-dim);
+    border-color: var(--gold);
+  }
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  animation: float 3s ease-in-out infinite;
+  opacity: 0;
+  animation: fadeIn 1s 1.4s forwards, float 3s 2.4s ease-in-out infinite;
+
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+  }
+}
