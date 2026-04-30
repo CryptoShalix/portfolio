@@ -76,11 +76,28 @@
     .hero-sub {
       font-family: var(--font-mono);
       font-size: 0.85rem;
-      color: var(--muted);
+      color: var(--white);
       letter-spacing: 0.06em;
       margin-bottom: 2.5rem;
       opacity: 0;
       animation: fadeUp 0.9s 0.55s forwards;
+
+      .role {
+        padding: 0 0.3rem;
+        color: var(--white);
+        font-weight: 400;
+
+        &:hover {
+          color: var(--gold);
+        }
+      }
+
+      .sep {
+        margin: 0 0.35rem;
+        margin: 0;
+        color: var(--white);
+        user-select: none;
+      }
     }
 
     .hero-desc {
@@ -95,20 +112,25 @@
       ul.hero-list {
         list-style: none;
         margin: 1rem 0 1.3rem;
-        padding-left: 1rem;
+        padding: 0;
         text-align: left;
 
         li {
           position: relative;
           color: rgba(240, 237, 230, 0.75);
           margin-bottom: 0.9rem;
-          padding-left: 1.2rem;
+          padding: 0;
 
           &::before {
-            content: '•';
-            position: absolute;
-            left: 0;
+            content: '▸';
             color: var(--gold);
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            margin: .5rem;
+          }
+
+          b {
+            color: var(--white);
           }
         }
       }
@@ -178,15 +200,94 @@ section {
     gap: 5rem;
     align-items: start;
 
-    .about-text p {
-      font-size: 1rem;
-      color: rgba(240, 237, 230, 0.75);
-      line-height: 1.9;
-      margin-bottom: 1.4rem;
+    .about-text {
+      p {
+        font-size: 1rem;
+        color: rgba(240, 237, 230, 0.75);
+        line-height: 1.9;
+        margin-bottom: 1.4rem;
 
-      strong {
-        color: var(--white);
-        font-weight: 500;
+        strong {
+          color: var(--white);
+          font-weight: 500;
+        }
+      }
+
+      h3 {
+        font-family: var(--font-mono);
+        font-size: 0.68rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin: 2rem 0 0.9rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .about-disciplines {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.6rem;
+
+        .discipline-pill {
+          padding: 0.4rem 1rem;
+          border: 1px solid rgba(200, 164, 90, 0.25);
+          border-radius: 999px;
+          font-family: var(--font-mono);
+          font-size: 0.7rem;
+          letter-spacing: 0.08em;
+          color: var(--gold);
+          background: rgba(200, 164, 90, 0.06);
+          transition: background 0.2s, border-color 0.2s, color 0.2s;
+
+          &:hover {
+            background: rgba(200, 164, 90, 0.14);
+            border-color: var(--gold);
+            color: var(--white);
+          }
+        }
+      }
+
+      .about-quote {
+        margin: 1.8rem 0;
+        padding: 1.2rem 1.5rem;
+        border-left: 2px solid var(--gold);
+        background: rgba(200, 164, 90, 0.04);
+        border-radius: 0 var(--r) var(--r) 0;
+
+        p {
+          font-family: var(--font-serif);
+          font-style: italic;
+          font-size: 1.15rem;
+          color: rgba(240, 237, 230, 0.85);
+          margin-bottom: 0 !important;
+          line-height: 1.7;
+        }
+      }
+
+      .about-cta-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--gold);
+        border-bottom: 1px solid rgba(200, 164, 90, 0.3);
+        padding-bottom: 0.1rem;
+        transition: border-color 0.2s, color 0.2s;
+
+        &:hover {
+          color: var(--white);
+          border-color: var(--white);
+        }
+
+        &::after {
+          content: '→';
+          font-style: normal;
+        }
       }
     }
 
@@ -198,7 +299,7 @@ section {
       .stat-card {
         padding: 1.8rem;
         background: var(--surface);
-        border: 1px solid var(--border);
+        border: .1rem solid var(--border);
         border-radius: var(--r);
         position: relative;
         overflow: hidden;
