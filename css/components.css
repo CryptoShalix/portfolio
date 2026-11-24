@@ -1,0 +1,59 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: .5rem;
+  padding: 0.85rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: var(--r);
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &.primary {
+    background: var(--text-accent);
+    color: var(--surface-dark);
+    font-weight: 500;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--border-accent);
+    }
+  }
+
+  &.ghost {
+    border: .1rem solid var(--border-accent);
+    color: var(--text-accent);
+
+    &:hover {
+      background: var(--surface-accent-dim);
+      border-color: var(--text-accent);
+    }
+  }
+}
+
+.hero-scroll {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 1rem auto;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 1s 1.4s forwards, float 3s 2.4s ease-in-out infinite;
+
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--text-accent), transparent);
+  }
+}
